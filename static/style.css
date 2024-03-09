@@ -1,0 +1,125 @@
+* {
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-size: 50px;
+    text-align: center;
+    border-bottom-style: dotted;
+}
+.center{
+    text-align: center;
+    margin-top: 150px;
+}
+.rows{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add some spacing between rows */
+    justify-content: center;
+}
+.button{
+    font-size: 45px;
+    width: 275px;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.table{
+    border-style: dotted;
+    width: 500px;
+    height: 575px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.keys{
+    font-size: 35px;
+    border-radius: 15px;
+    margin: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.keyboard{
+    font-size: 30px;
+    margin-top: 20px;
+    width: 90px;
+    cursor: grab;
+}
+#board-container{
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow: hidden;
+}
+#board{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.square {
+  border: 2px solid rgb(58, 58, 60);
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+      display: inline-block;
+      margin: 10px;
+}
+.block input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+.result {
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.correct {
+  color: green;
+  font-size: 20px;
+}
+.incorrect {
+  color: red;
+  font-size: 20px;
+}
+.score{
+    font-size: 30px;
+    margin-top: 30px;
+}
+.high_score{
+    font-size: 45px;
+    border: 2px solid;
+    width: 60px;
+    height: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+.button .toUnlock{
+    visibility: hidden;
+    width: 200px;
+    background-color: #D3D3D3;
+    border: black solid 1px;
+    color: black;
+    font-size: 25px;
+    border-radius: 6px;
+
+    position: absolute;
+    margin-top: 50px;
+}
+.button:hover .toUnlock{
+    visibility: visible;
+}
+.button{
+    border-radius: 25px;
+}

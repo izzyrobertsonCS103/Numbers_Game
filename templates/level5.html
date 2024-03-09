@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Numbers</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="static/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+<body>
+    <header>
+        <h1>Numbers</h1>
+    </header>
+    <div class="center">
+        <h1>LEVEL FIVE</h1>
+        <div id="board-container">
+            <div class="row">
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-1">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-2">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-3">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-4">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-5">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-6">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block1-7">
+                </div>
+                <div class="block">
+                    <h1>=</h1>
+                </div>
+                <div class="block">
+                    <div class="set_number" style="font-size: 25px;"></div>
+                </div>
+                <div class="result"></div>
+            </div>
+            <div class="row">
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-1">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-2">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-3">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-4">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-5">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-6">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block2-7">
+                </div>
+                <div class="block">
+                    <h1>=</h1>
+                </div>
+                <div class="block">
+                    <div class="set_number" style="font-size: 25px;"></div>
+                </div>
+                <div class="result"></div>
+            </div>
+            <div class="row">
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-1">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-2">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-3">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-4">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-5">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-6">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block3-7">
+                </div>
+                <div class="block">
+                    <h1>=</h1>
+                </div>
+                <div class="block">
+                    <div class="set_number" style="font-size: 25px;"></div>
+                </div>
+                <div class="result"></div>
+            </div>
+            <div class="row">
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-1">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-2">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-3">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-4">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-5">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-6">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block4-7">
+                </div>
+                <div class="block">
+                    <h1>=</h1>
+                </div>
+                <div class="block">
+                    <div class="set_number" style="font-size: 25px;"></div>
+                </div>
+                <div class="result"></div>
+            </div>
+            <div class="row">
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-1">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-2">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-3">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-4">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-5">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-6">
+                </div>
+                <div class="block">
+                    <input type="text" class="equation-input" id="block5-7">
+                </div>
+                <div class="block">
+                    <h1>=</h1>
+                </div>
+                <div class="block">
+                    <div class="set_number" style="font-size: 25px;"></div>
+                </div>
+                <div class="result"></div>
+            </div>
+        </div>
+        <div class="keys">
+            <button class="keyboard" onclick="addNumber(0)" id="button0">0</button>
+            <button class="keyboard" onclick="addNumber(1)" id="button1">1</button>
+            <button class="keyboard" onclick="addNumber(2)" id="button2">2</button>
+            <button class="keyboard" onclick="addNumber(3)" id="button3">3</button>
+            <button class="keyboard" onclick="addNumber(4)" id="button4">4</button>
+            <button class="keyboard" onclick="addNumber(5)" id="button5">5</button>
+            <button class="keyboard" onclick="addNumber(6)" id="button6">6</button>
+            <button class="keyboard" onclick="addNumber(7)" id="button7">7</button>
+            <button class="keyboard" onclick="addNumber(8)" id="button8">8</button>
+            <button class="keyboard" onclick="addNumber(9)" id="button9">9</button>
+            <br>
+            <button class="keyboard" onclick="addOperator('+')" id="addition">+</button>
+            <button class="keyboard" onclick="addOperator('-')" id="subtraction">-</button>
+            <button class="keyboard" onclick="addOperator('*')" id="multiplication">*</button>
+            <button class="keyboard" onclick="addOperator('/')" id="division">/</button>
+            <button class="keyboard" onclick="deleteInput()" id="deleteButton">Del</button>
+            <button class="keyboard" onclick="calculate()" id="calculateButton">=</button>
+            <button class="keyboard" onclick="playAgain()">Retry</button>
+        </div>
+        <br>
+        <p class="text-center"><a href="{{('levels')}}"><button class="button" type="button" style="width:90px; font-size:30px;">Back</button> </a>   </p> <br>
+        <div class="score"></div>
+    </div>
+<script>
+let set_numbers = []; // Array of set numbers
+let current_row = 0;
+const number_rows = 5;
+let score = 0;
+let equation_input_blocks = []; // Array which will contain the user inputs
+equation_input_blocks.push([]); // Initialize the first row of equation blocks
+enableInputs();
+const HighScore = {{ HighScore | tojson if HighScore else 'null' }}; // This is for storing the score and level into the database as I cannot perform a post method in python due to the program not using a submit button
+
+// For loop which generates 5 unique random set numbers for each row
+for (let i = 0; i < number_rows; i++) {
+    let set_number; // Initialising the set number which will be pushed into the array of set_numbers
+    do {
+        set_number = Math.floor(Math.random() * 50) + 30; // Random number between 10-20
+    } while (set_numbers.includes(set_number)); // If set number is already found inside the array then another random number is generated
+
+    set_numbers.push(set_number); // Pushing that set number into the array
+    document.getElementsByClassName('set_number')[i].textContent = set_number; // Even though I do not have my classes name 'set_number1' the program will automatically name each div class a specific number
+}
+
+// Allows users to add numbers into the equation blocks
+function addNumber(number) {
+    if (current_row >= number_rows) { // Current row cannot exceed the number of rows
+        return;
+    }
+    const current_equation = equation_input_blocks[current_row]; // Selects the current equation in the array using current_row
+    const equation = current_equation.join(''); // Joins the equation together with no spaces
+    if (equation.length >= 7){ // Equation length is 5 blocks
+        return
+    }
+    equation_input_blocks[current_row].push(number); // Pushes the inputted number into the array while also identifying the current_row
+    updateEquation(); // Calls the update function to update the equation with the number inputted
+    $('#button' + number).prop('disabled', true); // This is used to disable the number which user has already used, jquery
+}
+
+// Allows users to add operators into the equation blocks
+function addOperator(operator) {
+    if (current_row >= number_rows) { // Current row cannot exceed the number of rows
+        return;
+    }
+    const current_equation = equation_input_blocks[current_row]; // Selects the current equation in the array using current_row
+    const equation = current_equation.join(''); // Joins the equation together with no spaces
+    if (equation.length >= 7){ // Equation length cannot exceed 5 so buttons are disabled once equation length equals 5 or over, jquery is used to select all buttons and disable them
+        $(':button').prop('disabled', true);
+    }
+    equation_input_blocks[current_row].push(operator); // Pushes the operator into the array along with its current row
+    updateEquation(); // Update function is called to update the equation with the operator
+}
+
+// Delete function which uses pop() to erase the latest value in the array(equation block)
+function deleteInput() {
+    if (current_row < 0) { // Makes sure that current_row cannot be less than zero so pressing delete button with nothing to delete will not achieve anything
+        return;
+    }
+    const current_equation = equation_input_blocks[current_row]; // Selects the current equation in the array using current_row
+    const last_block = current_equation.length - 1; // Moves the current block by 1 so that the latest input will be deleted rather than trying to delete an empty current block
+
+    if (last_block >= 0) { // lack block can't be 0 or else it will not delete anything
+        const currentBlockId = `block${current_row + 1}-${last_block + 1}`; // Identifies the current block using the html id names of the blocks(eg. block(row)-(block number))
+        document.getElementById(currentBlockId).value = ''; // Searches the value inside the current block id
+        const deletedNumber = equation_input_blocks[current_row].pop(); // Remove the last element from the array
+        enableButton(deletedNumber); // Enable the corresponding button
+  }
+}
+
+// This is used to allow users to reuse a number which they previously used, but deleted, again
+function enableButton(number) {
+    document.getElementById(`button${number}`).disabled = false;
+}
+
+// Updates equation
+function updateEquation() {
+    const current_equation = equation_input_blocks[current_row]; // The current row is used to assign the current equation
+    for (let i = 0; i < current_equation.length; i++) {
+        document.getElementById(`block${current_row + 1}-${i + 1}`).value = current_equation[i]; // This code retrieves the html block ids(for example block1-1), the first number represents its row and next is its block number in the row
+    }
+}
+
+// Calculation and everything which happens after is written here like the disable_inputs() and posting the score into the database
+function calculate() {
+    if (current_row >= number_rows) { // Max number of rows are 5 so program will return if current row equals or extends that value
+        return;
+    }
+
+    const current_equation = equation_input_blocks[current_row]; // Finds current equation in the array using current_row
+    const equation = current_equation.join(''); // Joins the values in the current equation with no spaces between
+    if (equation.length !== 7) { // Equation length must be 5
+        return;
+    }
+    const result = eval(equation); // Evaluate function using javascript on the equation and assigning as result
+    const result_div = document.getElementsByClassName('result')[current_row]; // Gives the html class names result a value while also taking into account of the current_row so that the result of the correct row is displayed and understood
+
+    const icon = document.createElement('span');
+    icon.classList.add('result-icon'); // Used to have the html class names result to display either the 'correct' icon or the 'incorrect' icon
+
+    if (result === set_numbers[current_row]) {
+        icon.innerHTML = '&#10004;'; // html stored icon of a tick
+        icon.classList.add('correct'); // added a class name of correct to the icon inorder to style it in css
+        score++;
+    } else {
+        icon.innerHTML = '&#10008;'; // html stored icon of a cross
+        icon.classList.add('incorrect'); // added a class name of correct to the icon inorder to style it in css
+    }
+
+    result_div.appendChild(icon); // Adds the html icon into the result div classes
+    disableInputs(); // Called here incase the current row is greater than number of rows
+    equation_input_blocks.push([]); // Pushes the whole equation into the array
+    current_row++; // To track the current row
+    if (current_row < number_rows) { // Called here incase the current row is less than number of rows so user's will still need to be able to add inputs
+        enableInputs();
+    }
+    if (current_row >= number_rows) { // Once the current row exceeds the number of rows the game is over
+        showScore(); // score function which will display the score of the game out of 5
+
+        // After all equations have been attempted the score will be stored using post method
+        const level = 2; // The level value is set manually here and will different for each level
+        const highScore = { level: level, score: score }; // Serialize the object
+        fetch('/save_score', { // Calling the save_score function which is written in the python file
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(highScore), // Creates a string which can now be sent through to be posted
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+    }
+}
+
+// Shows the final score by pushing the score/content into a div class called score, jquery
+function showScore() {
+    const scoreDiv = document.querySelector('.score'); // Selects the score from the html element class name
+    scoreDiv.textContent = `Score: ${score} / ${number_rows}`; // Adds the score and number of rows for display in the html
+}
+
+// Disables user inputs, is used for when users finish all equations
+function disableInputs() {
+    const current_equation = equation_input_blocks[current_row];
+    for (let i = 0; i < current_equation.length; i++) {
+        document.getElementById(`block${current_row + 1}-${i + 1}`).disabled = true; // Disables the inputs for row once row has been calculated
+    }
+
+    document.getElementById('deleteButton').disabled = true; // Cannot delete once game is over
+    document.getElementById('calculateButton').disabled = true; // Cannot calculate once game is over
+
+
+    for (let i = 0; i <= 9; i++) { // Disable all number buttons using jquery
+        document.getElementById(`button${i}`).disabled = true;
+    }
+}
+
+// Enables inputs into the blocks
+function enableInputs() {
+    const current_equation = equation_input_blocks[current_row];
+    for (let i = 0; i < current_equation.length; i++) {
+        document.getElementById(`block${current_row + 1}-${i + 1}`).disabled = false; // While equation is not finished user can still input value
+    }
+
+    document.getElementById('deleteButton').disabled = false; // User can access delete button
+    document.getElementById('calculateButton').disabled = false; // User can access calculate button
+    for (let i = 0; i <= 9; i++) {
+        document.getElementById(`button${i}`).disabled = false; // User can access all numbers
+    }
+}
+
+// Retry button function which simply reloads the page/location
+function playAgain() {
+    location.reload();
+}
+</script>
+</body>
+</html>

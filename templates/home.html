@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<header>
+    <h1>Numbers</h1>
+</header>
+<div class="center">
+    {% if HighScore1 == 5 %}
+        <img src="static/badge1.png" alt="badge1" style="height: 200px;">
+    {% endif %}
+    {% if HighScore3 == 5 %}
+        <img src="static/badge2.png" alt="badge2" style="height: 200px;">
+    {% endif %}
+    {% if HighScore5 == 5 %}
+        <img src="static/badge3.png" alt="badge3" style="height: 200px;">
+    {% endif %}
+    <p class="text-center"><a href="{{('instructions')}}"><button class="button" type="button">Instructions</button>  </a>  </p> <br><br>
+    <p class="text-center"><a href="{{('levels')}}"><button class="button" type="button">Levels</button> </a>  </p> <br>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://graphemica.com/%F0%9F%94%92#html-entity-decimal">
+</head>
+<body>
+<header>
+    <h1>Numbers</h1>
+</header>
+<div class="center">
+    <div class="rows">
+        <p class="text-center"><a href="{{('level1')}}"><button class="button" type="button">Level 1</button> </a>  </p>
+        {% if HighScore1 is not none %}
+            <div class="high_score">{{ HighScore1 }}/5</div>
+        {% else %}
+            <div class="high_score">0/5</div>
+        {% endif %}<br>
+    </div>
+    <div class="rows">
+        {% if HighScore1 >= 5 %}
+            <p class="text-center"><a href="{{('level2')}}"><button class="button" type="button">Level 2</button> </a>  </p> <br>
+            {% if HighScore2 is not none %}
+            <div class="high_score">{{ HighScore2 }}/5</div>
+            {% else %}
+            <div class="high_score">0/5</div>
+            {% endif %}
+        {% else %}
+            <p class="text-center"><button class="button" type="button" style="background: #F08080; cursor: not-allowed;"><span class="toUnlock">Complete Level 1 to Unlock</span> Level 2</button>   </p> <br>
+            <div class="high_score" style="background: #F08080; font-size: 40px;">&#128274;</div>
+        {% endif %}<br>
+    </div>
+    <div class="rows">
+        {% if HighScore2 >= 5 %}
+            <p class="text-center"><a href="{{('level3')}}"><button class="button" type="button">Level 3</button> </a>  </p> <br>
+            {% if HighScore3 is not none %}
+            <div class="high_score">{{ HighScore3 }}/5</div>
+            {% else %}
+            <div class="high_score">0/5</div>
+            {% endif %}
+        {% else %}
+            <p class="text-center"><button class="button" type="button" style="background: #F08080; cursor: not-allowed;"><span class="toUnlock">Complete Level 2 to Unlock</span> Level 3</button>   </p> <br>
+            <div class="high_score" style="background: #F08080; font-size: 40px;">&#128274;</div>
+        {% endif %}<br>
+    </div>
+    <div class="rows">
+        {% if HighScore3 >= 5 %}
+            <p class="text-center"><a href="{{('level4')}}"><button class="button" type="button">Level 4</button> </a>  </p> <br>
+            {% if HighScore4 is not none %}
+            <div class="high_score">{{ HighScore4 }}/5</div>
+            {% else %}
+            <div class="high_score">0/5</div>
+            {% endif %}
+        {% else %}
+            <p class="text-center"><button class="button" type="button" style="background: #F08080; cursor: not-allowed;"><span class="toUnlock">Complete Level 3 to Unlock</span> Level 4</button>   </p> <br>
+            <div class="high_score" style="background: #F08080; font-size: 40px;">&#128274;</div>
+        {% endif %}<br>
+    </div>
+    <div class="rows">
+        {% if HighScore4 >= 5 %}
+            <p class="text-center"><a href="{{('level5')}}"><button class="button" type="button">Level 5</button> </a>  </p> <br>
+            {% if HighScore5 is not none %}
+            <div class="high_score">{{ HighScore5 }}/5</div>
+            {% else %}
+            <div class="high_score">0/5</div>
+            {% endif %}
+        {% else %}
+            <p class="text-center"><button class="button" type="button" style="background: #F08080; cursor: not-allowed;"><span class="toUnlock">Complete Level 4 to Unlock</span> Level 5</button>   </p> <br>
+            <div class="high_score" style="background: #F08080; font-size: 40px;">&#128274;</div>
+        {% endif %}<br>
+    </div>
+    <p class="text-center"><a href="{{('./')}}"><button class="button" onclick="history.back()" type="button" style="margin-top:20px;">Back</button></a>   </p>
+</div>
+</body>
+</html>
